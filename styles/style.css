@@ -27,7 +27,8 @@ body {
 }
 
 .nav-bar-logo {
-  width: 300px;
+  margin: .5rem .75rem;
+  width: 181.5px;
 }
 
 .nav-bar-item-text {
