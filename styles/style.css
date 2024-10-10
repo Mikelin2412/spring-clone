@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid #ebf2f2;
+}
+
+.nav-bar {
+  margin: 0 auto;
+  padding: 5px 0;
+  max-width: 1344px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-logo {
+  width: 300px;
+}
+
+.nav-bar-item-text {
+  padding: .5rem 2rem .5rem .75rem;
+  position: relative;
+}
+
+.nav-bar-item-text::after {
+  width: .5rem;
+  height: .5rem;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-radius: 1px;
+  content: ' ';
+  display: block;
+  top: 50%;
+  transform: rotate(-45deg);
+  margin-top: -0.275rem;
+  right: 1.125rem;
+  position: absolute;
+}
