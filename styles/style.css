@@ -49,7 +49,7 @@ body {
   display: block;
   top: 50%;
   transform: rotate(-45deg);
-  margin-top: -0.275rem;
+  margin-top: -0.375rem;
   right: 1.125rem;
   position: absolute;
 }
