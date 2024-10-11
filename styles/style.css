@@ -11,14 +11,18 @@ body {
 
 .header {
   border-bottom: 1px solid #ebf2f2;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-bar {
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 5px 0;
   max-width: 1344px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-bar-menu {
@@ -26,23 +30,50 @@ body {
   align-items: center;
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 48px;
+  height: 48px;
+}
+
+.burger-menu > span {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+}
+
+@media screen and (width <= 950px) {
+  .nav-bar-menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
+
 .nav-bar-logo {
-  margin: .5rem .75rem .5rem 0;
+  margin: 0.5rem 0.75rem 0.5rem 0;
   width: 181.5px;
 }
 
 .nav-bar-item-text {
   display: block;
-  padding: .5rem 2rem .5rem .75rem;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
   position: relative;
-  font-family: 'Metropolis', sans-serif; 
+  font-family: 'Metropolis', sans-serif;
   color: #111;
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 
 .nav-bar-item-text::after {
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
   border-radius: 1px;
@@ -58,6 +89,12 @@ body {
 .project-section {
   margin: 3rem auto;
   max-width: 1344px;
+}
+
+@media screen and (width <= 1384px) {
+  .project-section {
+    margin: 3rem 20px;
+  }
 }
 
 .project-title {
@@ -93,23 +130,34 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (width >= 800px) and (width <= 1000px) {
+  .cards-container {
+    width: 92.5%;
+  }
+}
+
+@media screen and (width < 800px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
 .card-link {
   padding: 30px 20px;
   border: 1px solid #d9e9e9;
   border-radius: 5px;
   min-height: 150px;
-  height: 100%;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   flex: 1 1 calc(50% - 0.75rem);
 
   transform: translateY(0px);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .card-link:hover {
-  box-shadow: 0 10px 20px 0 rgba(108, 135, 135, .2);
+  box-shadow: 0 10px 20px 0 rgba(108, 135, 135, 0.2);
   text-decoration: none;
   top: -3px;
   transform: translateY(-3px);
@@ -145,7 +193,7 @@ body {
 }
 
 .card-info-description {
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   line-height: 1.7rem;
 }
 
@@ -168,18 +216,17 @@ body {
 
   padding: 1rem;
   background-color: #fff;
-  box-shadow: 0 5px 30px 0 rgba(108, 135, 135, .5);
+  box-shadow: 0 5px 30px 0 rgba(108, 135, 135, 0.5);
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   border-radius: 6px;
 
   transform: translateY(-4px);
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 .nav-bar-dropdown-menu-item-link {
-  padding: .5rem .75rem;
-  padding-right: 2rem;
+  padding: 0.5rem 0.75rem;
   line-height: 1.5;
   display: block;
   white-space: nowrap;
