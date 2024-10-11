@@ -32,6 +32,7 @@ body {
 }
 
 .nav-bar-item-text {
+  display: block;
   padding: .5rem 2rem .5rem .75rem;
   position: relative;
   font-family: 'Metropolis', sans-serif; 
@@ -136,4 +137,44 @@ body {
 .card-info-description {
   padding: .75rem 0;
   line-height: 1.7rem;
+}
+
+.nav-bar-item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-bar-item:hover .nav-bar-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.nav-bar-dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 5px 30px 0 rgba(108, 135, 135, .5);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  border-radius: 6px;
+
+  transform: translateY(-4px);
+  transition: all .1s;
+}
+
+.nav-bar-dropdown-menu-item-link {
+  padding: .5rem .75rem;
+  padding-right: 2rem;
+  line-height: 1.5;
+  display: block;
+  white-space: nowrap;
+}
+
+.nav-bar-dropdown-menu-item-link:hover {
+  color: #6db33f;
 }
