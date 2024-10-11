@@ -103,6 +103,16 @@ body {
   display: flex;
   align-items: center;
   flex: 1 1 calc(50% - 0.75rem);
+
+  transform: translateY(0px);
+  transition: all .2s;
+}
+
+.card-link:hover {
+  box-shadow: 0 10px 20px 0 rgba(108, 135, 135, .2);
+  text-decoration: none;
+  top: -3px;
+  transform: translateY(-3px);
 }
 
 .card {
