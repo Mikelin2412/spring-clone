@@ -15,7 +15,6 @@ export default [
       'no-unused-vars': 'warn',
       'no-undef': 'warn',
       'prettier/prettier': 'error',
-      'max-lines': ['warn', { max: 80 }],
       ...eslintPluginPrettier.configs.recommended.rules,
     },
   },

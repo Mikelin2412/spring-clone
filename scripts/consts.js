@@ -42,3 +42,152 @@ const TablesInfo = [
     cardUrl: 'https://spring.io/projects/spring-security',
   },
 ];
+
+const NavigationMenuItems = [
+  {
+    title: 'Why Spring',
+    items: [
+      {
+        name: 'Overview',
+        link: 'https://spring.io/why-spring',
+      },
+      {
+        name: 'Microservices',
+        link: 'https://spring.io/microservices',
+      },
+      {
+        name: 'Reactive',
+        link: 'https://spring.io/reactive',
+      },
+      {
+        name: 'Event Driven',
+        link: 'https://spring.io/event-driven',
+      },
+      {
+        name: 'Cloud',
+        link: 'https://spring.io/cloud',
+      },
+      {
+        name: 'Web Applications',
+        link: 'https://spring.io/web-applications',
+      },
+      {
+        name: 'Serverless',
+        link: 'https://spring.io/serverless',
+      },
+      {
+        name: 'Batch',
+        link: 'https://spring.io/batch',
+      },
+    ],
+  },
+  {
+    title: 'Learn',
+    items: [
+      {
+        name: 'Overview',
+        link: 'https://spring.io/learn',
+      },
+      {
+        name: 'Quick Start',
+        link: 'https://spring.io/quickstart',
+      },
+      {
+        name: 'Guides',
+        link: 'https://spring.io/guides',
+      },
+      {
+        name: 'Blog',
+        link: 'https://spring.io/blog',
+      },
+    ],
+  },
+  {
+    title: 'Projects',
+    items: [
+      {
+        name: 'Overview',
+        link: 'https://spring.io/projects',
+      },
+      {
+        name: 'Spring Boot',
+        link: 'https://spring.io/projects/spring-boot',
+      },
+      {
+        name: 'Spring Framework',
+        link: 'https://spring.io/projects/spring-framework',
+      },
+      {
+        name: 'Spring Cloud',
+        link: 'https://spring.io/projects/spring-cloud',
+      },
+      {
+        name: 'Spring Cloud Data Flow',
+        link: 'https://spring.io/projects/spring-cloud-dataflow',
+      },
+      {
+        name: 'Spring Data',
+        link: 'https://spring.io/projects/spring-data',
+      },
+      {
+        name: 'Spring Security',
+        link: 'https://spring.io/projects/spring-security',
+      },
+    ],
+  },
+  {
+    title: 'Academy',
+    items: [
+      {
+        name: 'Courses',
+        link: 'https://spring.academy/courses',
+      },
+      {
+        name: 'Get Certified',
+        link: 'https://spring.academy/learning-path',
+      },
+    ],
+  },
+  {
+    title: 'Solutions',
+    items: [
+      {
+        name: 'Overview',
+        link: 'https://spring.io/solutions',
+      },
+      {
+        name: 'Tanzu Spring',
+        link: 'https://spring.academy/support',
+      },
+      {
+        name: 'Spring Consulting',
+        link: 'https://spring.academy/consulting',
+      },
+      {
+        name: 'Spring Academy For Teams',
+        link: 'https://spring.academy/teams',
+      },
+      {
+        name: 'Security Advisories',
+        link: 'https://spring.io/security',
+      },
+    ],
+  },
+  {
+    title: 'Community',
+    items: [
+      {
+        name: 'Overview',
+        link: 'https://spring.io/community',
+      },
+      {
+        name: 'Events',
+        link: 'https://spring.io/events',
+      },
+      {
+        name: 'Authors',
+        link: 'https://spring.io/authors',
+      },
+    ],
+  },
+];
