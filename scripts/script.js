@@ -1,5 +1,6 @@
 const cardsContainer = document.querySelector('.cards-container');
 const navbarMenuContainer = document.querySelector('.nav-bar__menu');
+const body = document.body;
 
 TablesInfo.forEach((info) => {
   const card = document.createElement('a');
@@ -33,4 +34,60 @@ NavigationMenuItems.forEach((item) => {
 
   navItem.append(dropdownMenu);
   navbarMenuContainer.append(navItem);
+});
+
+// Burger Menu
+const burgerButton = document.querySelector('.burger-menu-button');
+const sideMenu = document.querySelector('.side-menu');
+const backgroundBlocker = document.querySelector('.background-blocker');
+
+const navigationItemsContainer = document.createElement('div');
+navigationItemsContainer.className = 'side-menu__navigation-items';
+
+burgerButton.addEventListener('click', () => {
+  burgerButton.classList.toggle('active');
+  sideMenu.classList.toggle('active');
+  backgroundBlocker.classList.toggle('active');
+  if (burgerButton.classList.contains('active')) {
+    body.style.overflow = 'hidden';
+  } else {
+    body.style.overflow = 'auto';
+  }
+});
+
+NavigationMenuItems.forEach((item) => {
+  const navItem = document.createElement('div');
+  navItem.className = 'navigation-item';
+
+  const navItemName = document.createElement('span');
+  navItemName.className = 'navigation-item__name';
+  navItemName.innerHTML = `${item.title}`;
+
+  navItem.append(navItemName);
+  const dropdownNavLinks = document.createElement('ul');
+  dropdownNavLinks.className = 'navigation-item__list';
+
+  item.items.forEach((value) => {
+    const linkItem = document.createElement('li');
+    linkItem.innerHTML = `<a class="list-item" href=${value.link}>${value.name}</a>`;
+    dropdownNavLinks.append(linkItem);
+  });
+
+  navItem.append(dropdownNavLinks);
+  navigationItemsContainer.append(navItem);
+  sideMenu.append(navigationItemsContainer);
+});
+
+const navItemsName = document.querySelectorAll('.navigation-item__name');
+navItemsName.forEach((el) => {
+  el.addEventListener('click', (e) => {
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.navigation-item__name.open').forEach((el) => {
+      el.classList.remove('open');
+    });
+
+    if (!isOpen) {
+      el.classList.add('open');
+    }
+  })
 });
