@@ -345,3 +345,27 @@ body {
   padding: 0.75rem 0;
   line-height: 1.7rem;
 }
+
+.search-input {
+  display: block;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid #ebf2f2;
+  background: #fff;
+  outline: none;
+  margin: auto;
+  margin-bottom: 3.75rem;
+  max-width: 65%;
+  width: 100%;
+
+  font-size: 1.25rem;
+  transition: all .3s;
+}
+
+.search-input:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  border: 1.5px solid #6db33f;
+}
