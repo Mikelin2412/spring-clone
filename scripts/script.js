@@ -39,7 +39,6 @@ NavigationMenuItems.forEach((item) => {
 // Burger Menu
 const burgerButton = document.querySelector('.burger-menu-button');
 const sideMenu = document.querySelector('.side-menu');
-const backgroundBlocker = document.querySelector('.background-blocker');
 
 const navigationItemsContainer = document.createElement('div');
 navigationItemsContainer.className = 'side-menu__navigation-items';
@@ -47,7 +46,6 @@ navigationItemsContainer.className = 'side-menu__navigation-items';
 burgerButton.addEventListener('click', () => {
   burgerButton.classList.toggle('active');
   sideMenu.classList.toggle('active');
-  backgroundBlocker.classList.toggle('active');
   if (burgerButton.classList.contains('active')) {
     body.style.overflow = 'hidden';
   } else {
