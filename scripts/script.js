@@ -97,6 +97,12 @@ const searchData = (event) => {
   cardsContainer.innerHTML = '';
   const value = event.target.value.toLowerCase();
   const correctValues = TablesInfo.filter((item) => item.title.toLowerCase().includes(value));
+  if (!correctValues.length) {
+    const noResultText = document.createElement('h2');
+    noResultText.classList.add('no-results-text');
+    noResultText.innerHTML = 'No results';
+    cardsContainer.append(noResultText);
+  }
   correctValues.forEach((info) => {
     const card = document.createElement('a');
     card.href = info.cardUrl;

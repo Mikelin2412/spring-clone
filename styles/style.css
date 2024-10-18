@@ -262,6 +262,7 @@ body {
 
 /* SPRING-POSSIBILITIES-SECTION */
 .spring-possibilities-section {
+  min-height: 50vh;
   padding: 3.75rem 0;
   background-color: #ebf2f2;
 }
@@ -368,4 +369,8 @@ body {
 
 .search-input:focus {
   border: 1.5px solid #6db33f;
+}
+
+.no-results-text {
+  margin: auto;
 }
