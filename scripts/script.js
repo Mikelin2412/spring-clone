@@ -89,7 +89,7 @@ function createSideMenuItem(item) {
 function sideMenuItemToggling() {
   const navItemsName = document.querySelectorAll('.navigation-item__name');
   navItemsName.forEach((el) => {
-    el.addEventListener('click', (e) => {
+    el.addEventListener('click', () => {
       const isOpen = el.classList.contains('open');
       document.querySelectorAll('.navigation-item__name.open').forEach((el) => {
         el.classList.remove('open');
